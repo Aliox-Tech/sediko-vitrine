@@ -1,0 +1,4 @@
+# Adresse canonique : conserver le chemin et les paramètres.
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.sediko\.app$ [NC]
+RewriteRule ^ https://sediko.app%{REQUEST_URI} [R=301,L,NE]
