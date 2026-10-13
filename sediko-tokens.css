@@ -1,0 +1,54 @@
+/* ============================================================
+   SEDIKO — Tokens de la charte (source unique pour le site et l'app)
+   Version 1.0 · 10 octobre 2026 · Arnaud Diaz
+   Toute couleur ou police utilisée dans le code vient d'ici.
+   Contrastes calculés selon WCAG 2.1 (seuil texte courant : 4,5:1).
+   ============================================================ */
+
+:root {
+  /* --- Couleurs de marque ----------------------------------- */
+  --sediko-bordeaux:        #800020; /* nom, signature, titres forts, bouton principal */
+  --sediko-creme:           #F7EFE2; /* fonds de marque ; nom et symbole sur fond sombre */
+  --sediko-ardoise:         #5E7385; /* chaise du symbole, icônes, éléments décoratifs.
+                                        PAS pour le texte courant sur crème (4,3:1) */
+  --sediko-ardoise-claire:  #A3B4C2; /* chaise du symbole sur fond sombre uniquement */
+
+  /* --- Neutres (trou n°1 corrigé : « noir doux » défini) ---- */
+  --sediko-noir-doux:       #1C2630; /* titres d'interface, données, fonds sombres.
+                                        15,3:1 sur blanc · 13,4:1 sur crème */
+  --sediko-ardoise-texte:   #516476; /* (trou n°2 corrigé) texte courant et secondaire.
+                                        6,1:1 sur blanc · 5,4:1 sur crème */
+  --sediko-blanc:           #FFFFFF;
+
+  /* --- Couleurs de statut : réservées à la lanterne ---------
+     Jamais sur le logo, jamais sur les boutons, jamais en décoration. */
+  --sediko-statut-compatible:      #2F5D62; /* pastille + libellé (7,3:1 / 6,4:1) */
+  --sediko-statut-verifier:        #D97706; /* pastille du feu UNIQUEMENT */
+  --sediko-statut-verifier-texte:  #92400E; /* libellé « À vérifier » (7,1:1 / 6,2:1) */
+  --sediko-statut-non-compatible:  #9F1239; /* pastille + libellé (8,0:1 / 7,0:1) */
+
+  /* --- Typographie ------------------------------------------ */
+  --sediko-font-titre: "Playfair Display", Georgia, serif; /* tant que la licence web de Maharlika n'est pas confirmée */
+  --sediko-font-texte: "Inter", system-ui, sans-serif;
+  /* Données (allergènes, fiches menus, tableaux) : */
+  --sediko-chiffres: tabular-nums; /* font-variant-numeric */
+
+  /* --- Tailles minimales ------------------------------------ */
+  --sediko-logo-nom-min:  24px; /* le nom en serif ne descend jamais en dessous */
+  --sediko-lanterne-min:  20px; /* en dessous, les feux se confondent */
+  /* En dessous de 24 px (favicon, icône d'app, avatar) : symbole seul. */
+}
+
+/* Fond sombre : nom et symbole en crème, chaise en ardoise claire.
+   Utiliser les fichiers *-fond-sombre.svg, ne pas recolorer à la main. */
+
+/* Extensions web : valeurs dérivées exclusivement de la palette ci-dessus. */
+:root {
+  --sediko-transparent: transparent;
+  --sediko-ligne: color-mix(in srgb, var(--sediko-ardoise) 25%, var(--sediko-creme));
+  --sediko-ombre: color-mix(in srgb, var(--sediko-noir-doux) 12%, transparent);
+  --sediko-bordeaux-survol: color-mix(in srgb, var(--sediko-bordeaux) 85%, var(--sediko-noir-doux));
+}
+@font-face{font-family:"Inter";src:url("assets/fonts/inter.ttf") format("truetype");font-weight:100 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Playfair Display";src:url("assets/fonts/playfair.ttf") format("truetype");font-weight:400 900;font-style:normal;font-display:swap}
+@font-face{font-family:"Playfair Display";src:url("assets/fonts/playfair-italic.ttf") format("truetype");font-weight:400 900;font-style:italic;font-display:swap}
