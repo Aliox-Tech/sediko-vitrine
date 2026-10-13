@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="616 503 712 715" role="img" aria-label="Sediko">
+  <title>Sediko</title>
+  <g transform="translate(941 827.5) scale(1.0465)">
+    <circle r="129" fill="#F7EFE2"/>
+    <path d="M -114 -197.5 A 228 228 0 0 1 114 -197.5" fill="none" stroke="#F7EFE2" stroke-width="70" stroke-linecap="round"/>
+    <path d="M -197.5 114 A 228 228 0 0 1 -197.5 -114" fill="none" stroke="#F7EFE2" stroke-width="70" stroke-linecap="round"/>
+    <path d="M 287.2 121.9 A 312 312 0 0 1 111.8 291.3" fill="none" stroke="#A3B4C2" stroke-width="70" stroke-linecap="round"/>
+  </g>
+</svg>
